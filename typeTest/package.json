@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "tsd": "^0.11.0"
+  },
+  "scripts": {
+    "test": "npm run build-parent && npm run copy && tsd",
+    "build-parent": "cd .. && npm run build",
+    "copy": "cp ../dist/*.d.ts ."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "xiter",
+  "version": "1.0.0",
+  "description": "Extended iterables such as `Set`.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm run build && npm run test",
+    "build": "tsc",
+    "test": "npm run test-behavior && npm run test-types",
+    "test-behavior": "jest",
+    "test-types": "cd ./typeTest && npm test",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
+    "doc": "typedoc --out docs src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylejlin/xiter.git"
+  },
+  "keywords": [
+    "typescript",
+    "es6",
+    "set",
+    "iterable",
+    "monad"
+  ],
+  "author": "Kyle Lin",
+  "license": "MIT",
+  "homepage": "https://github.com/kylejlin/xiter#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.7",
+    "coveralls": "^3.0.7",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.1.0",
+    "tsd": "^0.11.0",
+    "typedoc": "^0.15.3",
+    "typedoc-plugin-external-module-name": "^2.1.0",
+    "typescript": "^3.7.2"
+  }
+}
