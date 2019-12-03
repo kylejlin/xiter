@@ -1,5 +1,10 @@
 # xiter - E**x**tended **iter**ables
 
+[![Build Status](https://travis-ci.com/kylejlin/xiter.svg?branch=master)](https://travis-ci.com/kylejlin/xiter)
+[![Coverage Status](https://coveralls.io/repos/github/kylejlin/xiter/badge.svg?branch=master)](https://coveralls.io/github/kylejlin/xiter?branch=master)
+[![npm version](https://badge.fury.io/js/xiter.svg)](https://www.npmjs.com/package/xiter)
+[![Downloads](https://img.shields.io/npm/dm/xiter.svg)](https://www.npmjs.com/package/xiter)
+
 Extensions of ES6 iterables such as `Set`.
 
 ## Problem
