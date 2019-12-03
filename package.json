@@ -14,7 +14,7 @@
     "test-behavior": "jest",
     "test-types": "cd ./typeTest && npm test",
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
-    "doc": "typedoc --out docs src"
+    "doc": "typedoc --out docs src && cd docs && echo \"\" > .nojekyll"
   },
   "repository": {
     "type": "git",
